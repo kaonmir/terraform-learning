@@ -2,11 +2,10 @@
 # Master Node of K8S
 resource "aws_network_interface" "worker_node_nic" {
   subnet_id   = aws_subnet.subnet_k8s.id
-  private_ips = ["10.11.150.30"]
+  private_ips = ["10.11.200.30"]
   security_groups = [
-    "sg-0416d95681dc6954d", # k8s Master Node
-    # "sg-04269960347f1342a", # k8s Worker Node
-    "sg-0754e8e1db7bd8988" # simple open
+    aws_security_group.allow_web_traffic.id,
+    aws_security_group.k8s_master_node.id
   ]
   depends_on = [aws_subnet.subnet_k8s]
 }
@@ -15,7 +14,7 @@ resource "aws_eip" "one" {
   vpc               = true
   network_interface = aws_network_interface.worker_node_nic.id
   #   associate_with_private_ip = aws_network_interface.worker_node_nic.private_ip
-  associate_with_private_ip = "10.11.150.30"
+  associate_with_private_ip = "10.11.200.30"
   depends_on = [
     aws_internet_gateway.kubenetes_gateway,
     aws_network_interface.worker_node_nic
