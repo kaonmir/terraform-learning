@@ -1,14 +1,18 @@
 # Terraform Learning
 
-## Overview
+## 🖥 Overview
 
 This is a repository for learning Terraform, a open-source IaaS (infrasturcture as a code)
 
 Why I'm studying this tech is to **define** a AWS resources with written code. I was getting trouble with configuring the AWS resources; EC2, RDS, VPC, ...
 
-Terraform let me release from these freaking duties. Of course I must make me familiar with confiuring. To be a Devops developer, let's get into it.
+Terraform let me release from these freaking duties. Of course I must make me familiar with confiuring. To be a Devops developer, let's get into it.  
 
-## Learning Course
+&nbsp;
+
+---
+
+## 📚 Learning Course
 
 ### 1. learn-terraform-aws-instance
 
