@@ -29,7 +29,7 @@ This is what I made without following any instruction.
 
 It's simple, and I'm looking forward to making whole project with terraform file. It means I make terraform available to make mandatory conneciton for each instances.
 
-## 푸념
+## 😮‍💨 푸념
 
 ### 25 JUL 2021 11:19
 
@@ -53,4 +53,4 @@ Error: Error creating ENI: InvalidGroup.NotFound: You have specified two resourc
 
 ### 26 JUL 2021 07:10
 
-이유를 찾았다. security group에도 vpc가 있는지 몰랐다. 새로 security group을 만들고 하나의 vpc로 통일하니 무사히 성공했다. 
+이유를 찾았다. security group에도 vpc가 있는지 몰랐다. 새로 security group을 만들고 하나의 vpc로 통일하니 무사히 성공했다.
