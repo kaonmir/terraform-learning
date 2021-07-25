@@ -9,6 +9,3 @@ variable "instance_ami" {
   type        = string
   default     = "ami-0dc8f589abe99f538"
 }
-
-# AKIAVCZ5ARWHGAF5REHC
-# p3N1795fQtE8ZZZYq/s7SfQDegAycmepJjyUeGcj
